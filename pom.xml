@@ -15,7 +15,8 @@
         <module>alibaba-nacos-discovery-server</module>
         <module>alibaba-nacos-discovery-client-common</module>
         <module>alibaba-nacos-discovery-client-feign</module>
-        <module>alibaba-nacos-config-client</module>         <!-- 使用Nacos实现服务注册与发现 -->
+        <module>alibaba-nacos-config-client</module>
+        <module>alibaba-sentinel-rate-limiting</module>         <!-- 使用Nacos实现服务注册与发现 -->
     </modules>
 
     <parent>
