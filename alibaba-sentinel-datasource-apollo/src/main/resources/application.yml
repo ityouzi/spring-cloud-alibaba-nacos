@@ -1,0 +1,24 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: sentinel-datasource-apollo
+  # sentinel dashboard
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8088         # sentinel dashboard的访问地址
+
+      datasource:
+        ds:
+          apollo:
+            namespace-name: application           # Apollo的空间名
+            flow-rules-key: sentinel.flowRules    # 配置规则的key名称
+            rule-type: flow                       # 定义存储的规则类型
+
+
+# apollo config
+app:
+  id: ${spring.application.name}
+
+
