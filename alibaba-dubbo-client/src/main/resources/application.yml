@@ -1,0 +1,20 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: alibaba-dubbo-client
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+
+# dubbo
+dubbo:
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: spring-cloud://localhost
+  cloud:
+    subscribed-services: alibaba-dubbo-server  # 表示要订阅服务的服务名(服务提供方名称的spring.application.name的值)

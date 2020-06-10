@@ -19,7 +19,10 @@
         <module>alibaba-sentinel-rate-limiting</module>
         <module>alibaba-sentinel-datasource-nacos</module>
         <module>alibaba-sentinel-datasource-apollo</module>
-        <module>alibaba-sentinel-annotation</module>         <!-- 使用Nacos实现服务注册与发现 -->
+        <module>alibaba-sentinel-annotation</module>
+        <module>alibaba-dubbo-api</module>
+        <module>alibaba-dubbo-server</module>
+        <module>alibaba-dubbo-client</module>         <!-- 使用Nacos实现服务注册与发现 -->
     </modules>
 
     <parent>
